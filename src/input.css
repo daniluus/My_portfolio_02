@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .logo {
+        transition: ease .4s;
+    }
+    .logo:hover {
+      transform: translate3d(0, -10px, 0);
+    }
+    .parent {
+        overflow: hidden;
+    }
+    .card {
+        transition: all .5s;
+    }
+    .parent:hover .card{
+        transform: scale(1.2);
+    }
+  }
